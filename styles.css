@@ -1,3 +1,18 @@
 body{
-    background-color: lightblue
+    background-color: black;
+    color: white;
+    font-family: "Lucida Handwriting", Cursive;
+    text-align: center;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: yellow;
 }
