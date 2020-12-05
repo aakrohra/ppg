@@ -1,13 +1,13 @@
-var button = document.getElementById("e")
-var plus = document.getElementById("plus")
-var minus = document.getElementById("minus")
-var speed = 1000
-var show = document.getElementById("show")
+var button = document.getElementById("e");
+var plus = document.getElementById("plus");
+var minus = document.getElementById("minus");
+var speed = 1000;
+var show = document.getElementById("show");
 var change;
 
-console.log("test")
+console.log("test");
 
-button.addEventListener("click",() => {
+button.addEventListener("click", () => {
     console.log(button.innerHTML)
     if (button.innerHTML == "stop") {
         button.innerHTML = "click for epilepsy"
