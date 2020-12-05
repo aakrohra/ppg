@@ -4,6 +4,7 @@ var minus = document.getElementById("minus");
 var speed = 1000;
 var show = document.getElementById("show");
 var change;
+var on = false;
 
 console.log("test");
 
@@ -12,11 +13,14 @@ button.addEventListener("click", () => {
     if (button.innerHTML == "stop") {
         button.innerHTML = "click for epilepsy"
         clearInterval(change);
+        on = false
         document.body.style.backgroundColor = "black"
         return;
     }
     else {
         button.innerHTML = "stop"
+        clearInterval(change);
+        on = true
         change = setInterval(() => {
             document.body.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
         },speed)
@@ -28,17 +32,22 @@ button.addEventListener("click", () => {
 plus.addEventListener("click",() => {
     speed += 50
     show.innerHTML = `speed: ${speed}`
-    clearInterval(change);
-    change = setInterval(() => {
-        document.body.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-    },speed)
+    if (on) {
+        clearInterval(change);
+        change = setInterval(() => {
+            document.body.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        },speed)
+    }
+    
 })
 minus.addEventListener("click",() => {
     speed -= 50
     show.innerHTML = `speed: ${speed}`
-    clearInterval(change);
-    change = setInterval(() => {
-        document.body.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-    },speed)
+    if (on) {
+        clearInterval(change);
+        change = setInterval(() => {
+            document.body.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        },speed)
+    }
 
 })
