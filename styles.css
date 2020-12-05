@@ -16,3 +16,15 @@ a:visited {
 a:hover {
     color: yellow;
 }
+
+.box {
+    background-color: white;
+    margin-top: 100px;
+    width: 300px;
+    margin: auto;
+}
+
+p1 {
+    color: black;
+}
+
