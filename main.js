@@ -17,7 +17,7 @@ button.addEventListener("click", () => {
         button.innerHTML = "click for epilepsy"
         clearInterval(change);
         on = false
-        document.body.style.backgroundColor = "black"
+        document.body.style.backgroundColor = "gray"
         return;
     }
     else {
