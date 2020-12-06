@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: black;
     color: white;
     font-family: "Lucida Handwriting", Cursive;
     text-align: center;
@@ -12,28 +12,12 @@ img{
     width:auto;
 }
 
-a:link {
-    color: coral;
-}
-
-a:visited {
-    color: orange;
-}
-
-a:hover {
-    color: yellow;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-}
-
 .bgbox {
     background-color: white;
     margin-top: 100px;
     width: 300px;
     margin: auto;
+    margin-top: 30px;
 }
 
 p1 {
@@ -51,16 +35,32 @@ li {
     float: left;
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
 li a {
     display: block;
-    color: white;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Monaco, Helvetica, sans-serif;
+    transition: 0.5s;
+    font-size: 20px;
 }
 
-/* Change the link color to #111 (black) on hover */
+li a:link {
+    color: orange;
+}
+
+li a:visited {
+    color: orange;
+}
+
 li a:hover {
-    background-color: black;
+    background-color: grey;
+    color: yellow
 }
