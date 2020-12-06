@@ -6,6 +6,9 @@ var show = document.getElementById("show");
 var change;
 var on = false;
 
+
+
+
 console.log("test");
 
 button.addEventListener("click", () => {
@@ -51,3 +54,6 @@ minus.addEventListener("click",() => {
     }
 
 })
+
+
+

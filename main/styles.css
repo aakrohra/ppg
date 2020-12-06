@@ -1,0 +1,64 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: "Lucida Handwriting", Cursive;
+    text-align: center;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.box {
+    background-color: white;
+    margin-top: 100px;
+    width: 300px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+p1 {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: black;
+}
+
+img{
+    max-height:500px;
+    max-width:500px;
+    height:auto;
+    width:auto;
+}
