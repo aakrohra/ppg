@@ -5,6 +5,22 @@ body {
     text-align: center;
 }
 
+button {
+    border-radius: 12px;
+    background-color: coral;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: "Lucida Handwriting", Cursive;
+    transition: 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: coral;
+}
+
 img{
     max-height:300px;
     max-width:300px;
@@ -17,7 +33,8 @@ img{
     margin-top: 100px;
     width: 300px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
+    border-radius: 25px;
 }
 
 p1 {
@@ -61,6 +78,6 @@ li a:visited {
 }
 
 li a:hover {
-    background-color: grey;
+    background-color: lightgray;
     color: yellow
 }
