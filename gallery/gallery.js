@@ -1,6 +1,7 @@
 function showImages() {
     if (maibutton.value == "OFF") {
         maibutton.value = "ON";
+        maibutton.innerHTML = "Hide Mai Sakurajima";
         var gallery = document.getElementById("gallery")
         console.log("test")
         var images = []
@@ -13,6 +14,7 @@ function showImages() {
     } 
     else {
         maibutton.value = "OFF";
+        maibutton.innerHTML = "Show Mai Sakurajima";
         var gallery = document.getElementById("gallery")
         gallery.remove();
         gallery = document.createElement("div")
