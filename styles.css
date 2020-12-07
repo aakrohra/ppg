@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
 body {
     background-color: black;
     color: white;
-    font-family: "Lucida Handwriting", Cursive;
+    font-family: 'Archivo', sans-serif;
     text-align: center;
 }
 
@@ -13,7 +13,7 @@ button {
     color: white;
     font-size: 15px;
     margin-top: 20px;
-    font-family: "Lucida Handwriting", Cursive;
+    font-family: 'Archivo', sans-serif;
     transition: 0.3s;
     outline: none;
 }
