@@ -1,3 +1,5 @@
+
+
 body {
     background-color: black;
     color: white;
@@ -80,4 +82,25 @@ li a:visited {
 li a:hover {
     background-color: lightgray;
     color: yellow
+}
+
+.mai {
+    position: absolute;
+}
+
+#gallery {
+    height: 20000px;
+
+}
+
+.gallerytext {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.gallerywrap:hover .gallerytext {
+    visibility: visible;
+    opacity: 1;
 }
