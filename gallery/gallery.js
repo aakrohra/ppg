@@ -2,7 +2,7 @@ var mais = []
 var imageX = []
 var imageY = []
 var counter = 0
-var imagenum = 486
+var imagenum = 1218
 var galleryheight = 20000
 
 function showImages() {
