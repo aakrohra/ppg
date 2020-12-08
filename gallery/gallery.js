@@ -5,36 +5,36 @@ var counter = 0
 var imagenum = 1218
 var galleryheight = 20000
 
-function showImages() {
-    if (maibutton.value == "OFF") {
-        maibutton.value = "ON";
-        maibutton.innerHTML = "Hide Mai Sakurajima";
-        var gallery = document.getElementById("gallery")
-        console.log("test")
-        var images = []
-        imageX = []
-        imageY = []
-        counter = 0
-        for (i=0;i<imagenum;i++) {
-            
-            var div = document.createElement("div");
-            gallery.append(div)
-            div.setAttribute("class","gallerywrap")
-            
-            
+// function showImages() {
+//     if (maibutton.value == "OFF") {
+//         maibutton.value = "ON";
+//         maibutton.innerHTML = "Hide Mai Sakurajima";
+var gallery = document.getElementById("gallery")
+console.log("test")
+var images = []
+imageX = []
+imageY = []
+counter = 0
+for (i=0;i<imagenum;i++) {
+    
+    var div = document.createElement("div");
+    gallery.append(div)
+    div.setAttribute("class","gallerywrap")
+    
+    
 
 
-            images[i] = document.createElement("img");
-            div.append(images[i])
-            images[i].setAttribute("src", `../resources/mai${i}.jpg`);
-            images[i].setAttribute("id","mai" + i)
-            images[i].setAttribute("class","mai")
+    images[i] = document.createElement("img");
+    div.append(images[i])
+    images[i].setAttribute("src", `../resources/mai${i}.jpg`);
+    images[i].setAttribute("id","mai" + i)
+    images[i].setAttribute("class","mai")
 
-            var text = document.createElement("p");
-            text.setAttribute("class","gallerytext")
-            text.setAttribute("id","gallerytext" + i)
-            div.append(text)
-            text.innerHTML = "This is Mai image " + i
+    var text = document.createElement("p");
+    text.setAttribute("class","gallerytext")
+    text.setAttribute("id","gallerytext" + i)
+    div.append(text)
+    text.innerHTML = "This is Mai image " + i
             
             // images[i].onload = function() {
             //     console.log(counter)
@@ -80,20 +80,21 @@ function showImages() {
             // }
             
             
-        }
-    } 
-    else {
-        maibutton.value = "OFF";
-        maibutton.innerHTML = "Show Mai Sakurajima";
-        var gallery = document.getElementById("gallery")
-        gallery.remove();
-        gallery = document.createElement("div")
-        gallery.setAttribute("id", "gallery")
-        gallery.style.width = width
-        gallery.style.height = 100000
-        var place = document.getElementById("place")
-        document.body.insertBefore(gallery,place.nextSibling);
-    }
+//         }
+//     } 
+//     else {
+//         maibutton.value = "OFF";
+//         maibutton.innerHTML = "Show Mai Sakurajima";
+//         var gallery = document.getElementById("gallery")
+//         gallery.remove();
+//         gallery = document.createElement("div")
+//         gallery.setAttribute("id", "gallery")
+//         gallery.style.width = width
+//         gallery.style.height = 100000
+//         var place = document.getElementById("place")
+//         document.body.insertBefore(gallery,place.nextSibling);
+//     }
+// }
 }
 var height = $(document).height();
 var width = $(document).width();
