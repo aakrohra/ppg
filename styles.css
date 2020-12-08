@@ -84,22 +84,22 @@ li a:hover {
     color: yellow
 }
 
-.mai {
-    position: absolute;
-}
 
 #gallery {
     height: 20000px;
-
 }
 
 .gallerytext {
-    position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
-
+.gallerywrap {
+    height: 300px;
+    width: 300px;
+    float: left;
+    padding: 20px 10px;
+}
 .gallerywrap:hover .gallerytext {
     visibility: visible;
     opacity: 1;

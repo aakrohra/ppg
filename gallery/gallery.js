@@ -21,11 +21,7 @@ function showImages() {
             gallery.append(div)
             div.setAttribute("class","gallerywrap")
             
-            var text = document.createElement("p");
-            text.setAttribute("class","gallerytext")
-            text.setAttribute("id","gallerytext" + i)
-            div.append(text)
-            text.innerHTML = "This is Mai image " + i
+            
 
 
             images[i] = document.createElement("img");
@@ -33,49 +29,55 @@ function showImages() {
             images[i].setAttribute("src", `../resources/mai${i}.jpg`);
             images[i].setAttribute("id","mai" + i)
             images[i].setAttribute("class","mai")
-            images[i].style.position = "absolute";
-            images[i].onload = function() {
-                console.log(counter)
-                var image = document.getElementById("mai"+counter)
-                var text = document.getElementById("gallerytext"+counter)
-                var rect = image.getBoundingClientRect();
-                console.log(rect)
-                var imagewidth = rect.width
-                var imageheight = rect.height
+
+            var text = document.createElement("p");
+            text.setAttribute("class","gallerytext")
+            text.setAttribute("id","gallerytext" + i)
+            div.append(text)
+            text.innerHTML = "This is Mai image " + i
+            
+            // images[i].onload = function() {
+            //     console.log(counter)
+            //     var image = document.getElementById("mai"+counter)
+            //     var text = document.getElementById("gallerytext"+counter)
+            //     var rect = image.getBoundingClientRect();
+            //     console.log(rect)
+            //     var imagewidth = rect.width
+            //     var imageheight = rect.height
                 
-                // while(true) {
-                    var top = Math.floor(Math.random()*galleryheight)
-                    var left = Math.floor(Math.random()*width) - 100
-                    var check = true
-                    console.log("i = " + imageX.length)
-                    console.log(imagewidth,imageheight)
+            //     // while(true) {
+            //         var top = Math.floor(Math.random()*galleryheight)
+            //         var left = Math.floor(Math.random()*width) - 100
+            //         var check = true
+            //         console.log("i = " + imageX.length)
+            //         console.log(imagewidth,imageheight)
                     
-                    // for (j=0;j<imageX.length;j++) {
+            //         // for (j=0;j<imageX.length;j++) {
                         
-                    //     if ((top-imageY[j]<imageheight + 50 && top-imageY[j] > -imageheight - 50) && (left-imageX[j]<imagewidth + 50 && left-imageX[j]>-imagewidth-50  )) {
-                    //         console.log("recheck")
-                    //         check = false
-                    //         break;
-                    //     }
-                    // }
-                //     if (check) {
-                //         break;
-                //     }
-                // }
-                text.style.top = top + imageheight + 20 + "px"
-                text.style.left = left + "px"
+            //         //     if ((top-imageY[j]<imageheight + 50 && top-imageY[j] > -imageheight - 50) && (left-imageX[j]<imagewidth + 50 && left-imageX[j]>-imagewidth-50  )) {
+            //         //         console.log("recheck")
+            //         //         check = false
+            //         //         break;
+            //         //     }
+            //         // }
+            //     //     if (check) {
+            //     //         break;
+            //     //     }
+            //     // }
+            //     text.style.top = top + imageheight + 20 + "px"
+            //     text.style.left = left + "px"
                 
                 
-                imageX.push(top)
-                imageY.push(left)
+            //     imageX.push(top)
+            //     imageY.push(left)
                 
-                image.style.top = top + "px"
-                image.style.left = left + "px"
+            //     image.style.top = top + "px"
+            //     image.style.left = left + "px"
                 
-                console.log("set")
-                console.log(image.style.left, image.style.top)
-                counter++;
-            }
+            //     console.log("set")
+            //     console.log(image.style.left, image.style.top)
+            //     counter++;
+            // }
             
             
         }
