@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
 body {
-    background-color: black;
-    color: white;
+    background-image: linear-gradient(to right, lightgray , white);
+    color: black;
     font-family: 'Archivo', sans-serif;
     text-align: center;
 }
 
 button {
     border-radius: 12px;
-    background-color: coral;
+    background-color: rgb(35, 25, 114);
     color: white;
     font-size: 15px;
     margin-top: 20px;
@@ -19,8 +19,8 @@ button {
 }
 
 button:hover {
-    background-color: #FFFFFF;
-    color: coral;
+    background-color: white;
+    color: rgb(35, 25, 114);
 }
 
 img{
@@ -67,23 +67,23 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.25s;
     font-size: 20px;
+    border-left: thick solid rgb(35, 25, 114);
 }
 
 li a:link {
-    color: orange;
+    color: rgb(0,81,181);
 }
 
 li a:visited {
-    color: orange;
+    color: rgb(0,81,181);
 }
 
 li a:hover {
-    background-color: lightgray;
-    color: yellow
+    background-color: rgb(0,81,181);
+    color: rgb(255, 204, 0);
 }
-
 
 #mai {
     height: 20000px;
@@ -132,4 +132,59 @@ li a:hover {
     font-family: 'Cabin', sans-serif;
     font-weight: normal;
     font-size: 3.5vw;
+}
+
+.matthew {
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 15px;
+    color: rgb(0,81,181);
+}
+
+.matthew img {
+    width: 256px;
+    height: 256px;
+}
+
+.aakaash {
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 15px;
+    color: rgb(35, 25, 114);
+}
+
+.aakaash img {
+    width: 256px;
+    height: 256px;
+}
+
+.varchas {
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 15px;
+    color: rgb(0,81,181);
+}
+
+.rafay {
+    display: inline-block;
+    color: rgb(35,25,114);
+}
+
+.shayaha {
+    display: inline-block; 
+    margin-right: 15px;
+    padding-right: 15px;
+    color: rgb(0,81,181);
+}
+
+.aman {
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 15px;
+    color: rgb(35,25,114);
+}
+
+.bilal {
+    display: inline-block;
+    color: rgb(0,81,181);
 }

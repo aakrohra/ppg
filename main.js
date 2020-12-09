@@ -7,8 +7,6 @@ var change;
 var on = false;
 
 
-
-
 console.log("test");
 
 button.addEventListener("click", () => {
