@@ -136,8 +136,7 @@ li a:hover {
 
 .matthew {
     display: inline-block;
-    margin-right: 15px;
-    padding-right: 15px;
+    padding: 15px;
     color: rgb(0,81,181);
 }
 
@@ -148,8 +147,7 @@ li a:hover {
 
 .aakaash {
     display: inline-block;
-    margin-right: 15px;
-    padding-right: 15px;
+    padding: 15px;
     color: rgb(35, 25, 114);
 }
 
@@ -160,27 +158,25 @@ li a:hover {
 
 .varchas {
     display: inline-block;
-    margin-right: 15px;
-    padding-right: 15px;
+    padding: 15px;
     color: rgb(0,81,181);
 }
 
 .rafay {
     display: inline-block;
-    color: rgb(35,25,114);
+    padding: 15px;
+    color: rgb(35, 25, 114);
 }
 
 .shayaha {
     display: inline-block; 
-    margin-right: 15px;
-    padding-right: 15px;
+    padding: 15px;
     color: rgb(0,81,181);
 }
 
 .aman {
     display: inline-block;
-    margin-right: 15px;
-    padding-right: 15px;
+    padding: 15px;
     color: rgb(35,25,114);
 }
 
