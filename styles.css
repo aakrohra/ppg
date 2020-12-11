@@ -85,9 +85,7 @@ li a:hover {
     color: rgb(255, 204, 0);
 }
 
-#mai {
-    height: 20000px;
-}
+
 #maigallery {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.3), 
@@ -141,7 +139,10 @@ li a:hover {
     height: 100vh;
     
 }
-.maipage h1 {
+#maipage {
+    cursor: url(mai29small.cur),auto;
+}
+#maipage h1 {
     font-family: 'Cabin', sans-serif;
     font-weight: normal;
     font-size: 3.5vw;

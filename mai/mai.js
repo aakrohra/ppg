@@ -28,7 +28,7 @@ for (i=0;i<imagenum;i++) {
     div.append(images[i])
     images[i].setAttribute("src", `../resources/mai${i}.jpg`);
     images[i].setAttribute("id","mai" + i)
-    images[i].setAttribute("class","mai")
+    images[i].setAttribute("class","maiimg")
 
     var text = document.createElement("p");
     text.setAttribute("class","maitext")
