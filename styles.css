@@ -187,9 +187,18 @@ li a:hover {
 
 .column {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     text-align: center;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
 }
 
 .column img{
@@ -208,15 +217,16 @@ li a:hover {
     border-left-color: rgb(255, 204, 0);
     border-right-color: rgb(0,81,181);
     border-bottom-color: rgb(0,81,181);
-    filter:brightness(80%);
+    filter:brightness(70%);
 }
 
-.name {
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.column img:hover ~ .name {
+    visibility: visible;
+}
+
+.name:hover {
+    visibility: visible;
+
 }
 
 .column h3 {
