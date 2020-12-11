@@ -56,7 +56,11 @@ li {
 
 .menu {
     display: flex;
+/*    position: fixed;*/
     justify-content: center;
+    background-color: rgba(255, 204, 0,0);
+    width: 100%;
+    z-index: 999;
 }
 
 li a {
@@ -85,6 +89,48 @@ li a:hover {
     color: rgb(255, 204, 0);
 }
 
+.bottom-menu {
+    background-color: rgb(35, 25, 114);
+    color: rgb(255, 204, 0);
+    bottom: 0;
+    position: relative;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.creators .creator-names {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bottom-navigation .bottom-nav {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bottom-links {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bottom-menu a {
+    color: rgb(255, 204, 0);
+}
+
+.bottom-menu a:hover {
+    color: lightgray;
+}
+
+
+
 
 #maigallery {
     background-image: linear-gradient(
@@ -106,10 +152,12 @@ li a:hover {
     margin-block-start: 0.4em;
 }
 .maiwrap {
+    display: inline-block;
+    justify-content: center;
     height: 300px;
     width: 300px;
-    float: left;
-    padding: 20px 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .maiwrap:hover .maitext {
     visibility: visible;
@@ -148,57 +196,6 @@ li a:hover {
     font-size: 3.5vw;
 }
 
-.matthew {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(0,81,181);
-}
-
-.matthew img {
-    width: 256px;
-    height: 256px;
-}
-
-.aakaash {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(35, 25, 114);
-}
-
-.aakaash img {
-    width: 256px;
-    height: 256px;
-}
-
-.varchas {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(0,81,181);
-}
-
-.rafay {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(35, 25, 114);
-}
-
-.shayaha {
-    display: inline-block; 
-    padding: 15px;
-    color: rgb(0,81,181);
-}
-
-.aman {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(35,25,114);
-}
-
-.bilal {
-    display: inline-block;
-    color: rgb(0,81,181);
-}
-
 .column {
     display: inline-block;
     padding: 10px;
@@ -216,6 +213,7 @@ li a:hover {
 }
 
 .column img{
+    transition: 0.2s;
     border: thick solid;
     border-radius: 7px;
     border-top-color: rgb(0,81,181);
@@ -225,6 +223,7 @@ li a:hover {
 }
 
 .column img:hover{
+    transition: 0.2s;
     border: thick solid;
     border-radius: 10px;
     border-top-color: rgb(255, 204, 0);
@@ -240,12 +239,9 @@ li a:hover {
 
 .name:hover {
     visibility: visible;
-
 }
 
 .column h3 {
     padding-top: 0px;
     margin-top: 2px;
 }
-
-
