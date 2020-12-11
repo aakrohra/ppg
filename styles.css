@@ -184,3 +184,44 @@ li a:hover {
     display: inline-block;
     color: rgb(0,81,181);
 }
+
+.column {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.column img{
+    border: thick solid;
+    border-radius: 7px;
+    border-top-color: rgb(0,81,181);
+    border-left-color: rgb(0,81,181);
+    border-right-color: rgb(255, 204, 0);
+    border-bottom-color: rgb(255, 204, 0);
+}
+
+.column img:hover{
+    border: thick solid;
+    border-radius: 10px;
+    border-top-color: rgb(255, 204, 0);
+    border-left-color: rgb(255, 204, 0);
+    border-right-color: rgb(0,81,181);
+    border-bottom-color: rgb(0,81,181);
+    filter:brightness(80%);
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column h3 {
+    padding-top: 0px;
+    margin-top: 2px;
+}
+
+
