@@ -2,7 +2,7 @@ var mais = []
 var imageX = []
 var imageY = []
 var counter = 0
-var imagenum = 2408
+var imagenum = 20
 var maiheight = 20000
 
 // function showImages() {
@@ -110,7 +110,15 @@ console.log(height,width)
 //     }
 
 // })
+var height,width;
+$(window).resize(function() {
+    height = $(document).height();
+    width = $(document).width();
+    setup();
+});
 function setup() {
     var maigallery = document.getElementById("maigallery")
-    maigallery.style.width = width
+    
+    maigallery.style.height = 340*imagenum/Math.floor(width/320) + "px"
+    console.log(maigallery.style.height)
 }

@@ -88,11 +88,24 @@ li a:hover {
 #mai {
     height: 20000px;
 }
-
+#maigallery {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),url('cherryblossom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .maitext {
     visibility: hidden;
     opacity: 0;
-    transition: opacity .2s, visibility .2s;
+    transition: opacity .3s, visibility .3s;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    border-width: 0px;
+    margin-block-start: 0.4em;
+    margin-block-start: 0.4em;
 }
 .maiwrap {
     height: 300px;
