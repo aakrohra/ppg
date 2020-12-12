@@ -61,7 +61,8 @@ $(window).resize(function() {
 function setup() {
     var maigallery = document.getElementById("maigallery")
     
-    maigallery.style.height = 340*counter/Math.floor(width/320) + "px"
+    maigallery.style.height = 340*(counter*imagenum)/Math.floor(width/320) + "px"
+    
 }
 
 $(window).scroll(function() {

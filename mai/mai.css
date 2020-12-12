@@ -1,0 +1,76 @@
+body {
+    background-image: linear-gradient(to right, lightgray , white);
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+}
+
+#maigallery {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),url('../cherryblossom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.maitext {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    border-width: 0px;
+    margin-block-start: 0.4em;
+    margin-block-start: 0.4em;
+}
+.maiwrap {
+    display: inline-block;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.maiwrap:hover .maitext {
+    visibility: visible;
+    opacity: 1;
+}
+.Fixed {
+    position: fixed;
+    top: 20px;
+}
+/* #backgroundmai {
+    max-width: 100vw;
+    max-height: 100vh;
+    float: center;
+} */
+
+
+.maitop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),url('../bestmai.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+img{
+    max-height:300px;
+    max-width:300px;
+    height:auto;
+    width:auto;
+}
+#maipage {
+    cursor: url(../mai29small.cur),auto;
+}
+#maipage h1 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    font-size: 3.5vw;
+}

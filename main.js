@@ -5,7 +5,7 @@ var speed = 1000;
 var show = document.getElementById("show");
 var change;
 var on = false;
-
+var paragraph = document.getElementById("m");
 
 console.log("test");
 
@@ -41,6 +41,9 @@ plus.addEventListener("click",() => {
     }
     
 })
+
+paragraph.innerHTML = "<span onclick=\"window.location.href='../mai/mai.html'\">Mai</span>tthew Tang";
+
 minus.addEventListener("click",() => {
     speed -= 50
     show.innerHTML = `speed: ${speed}`
