@@ -1,3 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+body {
+    background-image: linear-gradient(to right, lightgray , white);
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+}
+
+button {
+    border-radius: 12px;
+    background-color: rgb(35, 25, 114);
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Archivo', sans-serif;
+    transition: 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(35, 25, 114);
+}
+
+
+
+.bgbox {
+    background-color: white;
+    margin-top: 100px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+p1 {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.menu {
+    display: flex;
+/*    position: fixed;*/
+    justify-content: center;
+    background-color: rgba(255, 204, 0,0);
+    width: 100%;
+    z-index: 999;
+}
+
+li a {
+    display: block;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 20px;
+    border-left: thick solid rgb(35, 25, 114);
+}
+
+li a:link {
+    color: rgb(0,81,181);
+}
+
+li a:visited {
+    color: rgb(0,81,181);
+}
+
+li a:hover {
+    background-color: rgb(0,81,181);
+    color: rgb(255, 204, 0);
+}
+
+.bottom-menu {
+    background-color: rgb(35, 25, 114);
+    color: rgb(255, 204, 0);
+    bottom: 0;
+    position: relative;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.creators .creator-names {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bottom-navigation .bottom-nav {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bottom-links {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bottom-menu a {
+    color: rgb(255, 204, 0);
+}
+
+.bottom-menu a:hover {
+    color: lightgray;
+}
+
+
+
+
+
+
+.column {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.column img{
+    transition: 0.2s;
+    border: thick solid;
+    border-radius: 7px;
+    border-top-color: rgb(0,81,181);
+    border-left-color: rgb(0,81,181);
+    border-right-color: rgb(255, 204, 0);
+    border-bottom-color: rgb(255, 204, 0);
+}
+
+.column img:hover{
+    transition: 0.2s;
+    border: thick solid;
+    border-radius: 10px;
+    border-top-color: rgb(255, 204, 0);
+    border-left-color: rgb(255, 204, 0);
+    border-right-color: rgb(0,81,181);
+    border-bottom-color: rgb(0,81,181);
+    filter:brightness(70%);
+}
+
+.column img:hover ~ .name {
+    visibility: visible;
+}
+
+.name:hover {
+    visibility: visible;
+}
+
+.column h3 {
+    padding-top: 0px;
+    margin-top: 2px;
+}
+
 body {
     background-image: linear-gradient(to right, lightgray , white);
     color: black;
@@ -20,19 +201,25 @@ body {
     transition: opacity .3s, visibility .3s;
     font-family: 'Cabin', sans-serif;
     font-weight: normal;
-    border-width: 0px;
+    margin-top: -20px;
     margin-block-start: 0.4em;
-    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
 }
 .maiwrap {
-    display: inline-block;
-    justify-content: center;
+    
     height: 300px;
     width: 300px;
-    padding-left: 8px;
-    padding-right: 8px;
+    float: left;
+    padding: 20px 10px;
 }
-.maiwrap:hover .maitext {
+.maiimg:hover ~ .maitext {
+    visibility: visible;
+    opacity: 1;
+}
+.maiimg:hover {
+    filter: brightness(80%)
+}
+.maitext:hover {
     visibility: visible;
     opacity: 1;
 }
@@ -60,14 +247,16 @@ body {
     height: 100vh;
     
 }
-img{
+.maiimg{
+    transition: .3s;
     max-height:300px;
     max-width:300px;
     height:auto;
     width:auto;
 }
+
 #maipage {
-    cursor: url(../mai29small.cur),auto;
+    cursor: url('../mai29small.cur'),auto;
 }
 #maipage h1 {
     font-family: 'Cabin', sans-serif;
