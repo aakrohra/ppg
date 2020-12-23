@@ -124,11 +124,6 @@ li a:hover {
     color: lightgray;
 }
 
-
-
-
-
-
 .column {
     display: inline-block;
     padding: 10px;
@@ -143,6 +138,7 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
+    pointer-events: none;
 }
 
 .column img{
@@ -192,3 +188,4 @@ img{
     height:auto;
     width:auto;
 }
+
