@@ -139,6 +139,7 @@ li a:hover {
     transform: translate(-50%, -50%);
     visibility: hidden;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .column img{

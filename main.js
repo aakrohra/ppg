@@ -42,7 +42,7 @@ console.log("test");
     
 // })
 
-paragraph.innerHTML = "<span onclick=\"window.location.href='../mai/mai.html'\">Mai</span>tthew Tang";
+paragraph.innerHTML = "<span onclick=\"window.location.href='../ppg/mai/mai.html'\">Mai</span>tthew Tang";
 
 // minus.addEventListener("click",() => {
 //     speed -= 50
