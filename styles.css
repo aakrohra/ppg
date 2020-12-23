@@ -166,7 +166,9 @@ li a:hover {
 .column img:hover ~ .name {
     visibility: visible;
 }
-
+.column a:hover ~ .name {
+    visibility: visible;
+}
 .name:hover {
     visibility: visible;
 }
