@@ -134,12 +134,13 @@ li a:hover {
 .name {
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 68%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
     pointer-events: none;
     z-index: 9999;
+    font-size: 22px;
 }
 
 .column img{
