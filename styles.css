@@ -193,3 +193,8 @@ img{
     width:auto;
 }
 
+#video{
+    padding: 10px;
+    width: 60%;
+    height: calc(60vw * 0.5625);
+}
