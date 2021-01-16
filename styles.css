@@ -173,7 +173,9 @@ li a:hover {
 .name:hover {
     visibility: visible;
 }
-
+.mailink:hover {
+    cursor: pointer;
+}
 .column h3 {
     padding-top: 0px;
     margin-top: 2px;
