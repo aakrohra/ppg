@@ -201,9 +201,8 @@ body {
     transition: opacity .3s, visibility .3s;
     font-family: 'Cabin', sans-serif;
     font-weight: normal;
-    margin-top: -20px;
-    margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.1em;
 }
 .maiwrap {
     
@@ -263,3 +262,6 @@ body {
     font-weight: normal;
     font-size: 3.5vw;
 }
+
+.grow { transition: all 1s ease; }
+.grow:hover { transform: scale(1.5); }

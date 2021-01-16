@@ -31,18 +31,25 @@ function addImages() {
         maigallery.append(div)
         div.setAttribute("class", "maiwrap")
 
-
+        var a = document.createElement("a");
+        a.setAttribute("href",`../resources/mai${i}.jpg`)
+        div.append(a)
         images[i] = document.createElement("img");
-        div.append(images[i])
+        a.append(images[i])
         images[i].setAttribute("src", `../resources/mai${i}.jpg`);
         images[i].setAttribute("id", "mai" + i)
-        images[i].setAttribute("class", "maiimg")
+        images[i].classList.add("maiimg","grow")
+        
+
 
         var text = document.createElement("p");
         text.setAttribute("class", "maitext")
         text.setAttribute("id", "maitext" + i)
         div.append(text)
         text.innerHTML = "Mai Sakurajima Best Girl"
+
+        
+
     }
     counter++
     maigallery.style.height = 340 * (counter * imagenum) / Math.floor(width / 320) + "px"
