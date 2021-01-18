@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 
 body {
     background-image: linear-gradient(to right, lightgray , white);
     color: black;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
 
@@ -13,7 +13,6 @@ button {
     color: white;
     font-size: 15px;
     margin-top: 20px;
-    font-family: 'Archivo', sans-serif;
     transition: 0.3s;
     outline: none;
 }
@@ -22,8 +21,6 @@ button:hover {
     background-color: white;
     color: rgb(35, 25, 114);
 }
-
-
 
 .bgbox {
     background-color: white;
@@ -134,7 +131,7 @@ li a:hover {
 .name {
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 44%;
+    top: 41.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
@@ -151,6 +148,7 @@ li a:hover {
     border-left-color: rgb(0,81,181);
     border-right-color: rgb(255, 204, 0);
     border-bottom-color: rgb(255, 204, 0);
+    transition: all 1s ease;
 }
 
 .column img:hover{
@@ -162,6 +160,7 @@ li a:hover {
     border-right-color: rgb(0,81,181);
     border-bottom-color: rgb(0,81,181);
     filter:brightness(70%);
+    transform: scale(1.05);
 }
 
 .column img:hover ~ .name {
@@ -177,15 +176,8 @@ li a:hover {
     cursor: pointer;
 }
 .column h3 {
-    padding-top: 0px;
+    padding-top: 3px;
     margin-top: 2px;
-}
-
-body {
-    background-image: linear-gradient(to right, lightgray , white);
-    color: black;
-    font-family: 'Archivo', sans-serif;
-    text-align: center;
 }
 
 img{
