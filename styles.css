@@ -148,7 +148,7 @@ li a:hover {
     border-left-color: rgb(0,81,181);
     border-right-color: rgb(255, 204, 0);
     border-bottom-color: rgb(255, 204, 0);
-    transition: all 1s ease;
+    transition: all 0.35s ease;
 }
 
 .column img:hover{
