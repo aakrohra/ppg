@@ -43,6 +43,8 @@ li {
     background-color: transparent;
     width: 100%;
     z-index: 999;
+    padding-top: 8px;
+    padding-bottom: -8px;
 }
 
 li a {
@@ -183,11 +185,16 @@ img{
 }
 
 .wrapper{
-    position: relative;
+    position: absolute;
     width:100%;
     height:100%;
     overflow:hidden;
     background: linear-gradient(90deg, lightblue, lightyellow);
+    z-index: -100;
+}
+
+.indexcontent{
+    z-index: 100;
 }
 
 .box div{
