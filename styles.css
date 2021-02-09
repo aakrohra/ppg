@@ -4,6 +4,8 @@ body {
     color: black;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 button {
