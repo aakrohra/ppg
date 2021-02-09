@@ -5,6 +5,11 @@ var counter = 0
 var imagenum = 100
 var maiheight = 20000
 
+var song = new Audio('../Song.mp3');
+song.volume = 0.5
+document.body.addEventListener("click", () => {
+    song.play()
+}, true)
 // function showImages() {
 //     if (maibutton.value == "OFF") {
 //         maibutton.value = "ON";
@@ -15,14 +20,27 @@ var images = []
 imageX = []
 imageY = []
 counter = 0
-
+var array = Array.from(Array(2407).keys())
+console.log(array)
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array
+}
+array = shuffleArray(array)
+console.log(array)
 function addImages() {
 
     var maigallery = document.getElementById("maigallery")
+    
     for (i = counter * imagenum; i < (counter + 1) * imagenum; i++) {
         if (i == 2407) {
             console.log(i)
-            console.log("max reacher")
+            console.log("max reached")
             break;
         }
         console.log(i)
@@ -32,19 +50,19 @@ function addImages() {
         div.setAttribute("class", "maiwrap")
 
         var a = document.createElement("a");
-        a.setAttribute("href",`../resources/mai${i}.jpg`)
+        a.setAttribute("href",`../resources/mai${array[i]}.jpg`)
         div.append(a)
         images[i] = document.createElement("img");
         a.append(images[i])
-        images[i].setAttribute("src", `../resources/mai${i}.jpg`);
-        images[i].setAttribute("id", "mai" + i)
+        images[i].setAttribute("src", `../resources/mai${array[i]}.jpg`);
+        images[i].setAttribute("id", "mai" + array[i])
         images[i].classList.add("maiimg","grow")
         
 
 
         var text = document.createElement("p");
         text.setAttribute("class", "maitext")
-        text.setAttribute("id", "maitext" + i)
+        text.setAttribute("id", "maitext" + array[i])
         div.append(text)
         text.innerHTML = "Mai Sakurajima Best Girl"
 

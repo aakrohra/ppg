@@ -216,7 +216,7 @@ body {
     opacity: 1;
 }
 .maiimg:hover {
-    filter: brightness(80%)
+    filter: brightness(90%)
 }
 .maitext:hover {
     visibility: visible;
@@ -264,4 +264,4 @@ body {
 }
 
 .grow { transition: all 1s ease; }
-.grow:hover { transform: scale(1.5); }
+.grow:hover { transform: scale(1.25); }
