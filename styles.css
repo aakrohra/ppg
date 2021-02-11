@@ -195,7 +195,7 @@ img{
     width:auto;
 }
 
-#video{
+.video{
     width: 60%;
     height: calc(60vw * 0.5625);
 }

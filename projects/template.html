@@ -5,6 +5,7 @@
     <title>Personal Project Gallery 2021</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../projects/projects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,11 +31,13 @@
         </ul>
     </div>
     
-    <h1 class="maintitle">Title</h1>
-    <h2 class="maintitle">Name</h2>
+    <h1 class="maintitle" id="pptitle">Title</h1>
+    <h2 class="maintitle" id="ppname">Name</h2>
     
-    <p class="ppText">Description</p>
-    
+    <p class="ppText" id="ppdesc">Description</p>
+    <iframe class="video" id="ppvid" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <script src="./template.js" type="text/javascript"></script>
 </body>
     
 </html>
