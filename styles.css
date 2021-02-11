@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
 
 body {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+/*  font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Monda', sans-serif;
     text-align: center;
     margin: 0px;
     padding: 0px;
+}
+
+.maintitle {
+    font-family: 'Fugaz One', cursive;
 }
 
 .introtext {
@@ -53,6 +60,7 @@ li {
     z-index: 999;
     padding-top: 20px;
     padding-bottom: -8px;
+    font-family: 'Fugaz One', cursive;
 }
 
 li a {
@@ -78,7 +86,7 @@ li a:visited {
 }
 
 li a:hover {
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.65);
 }
 
 .bottom-menu {
