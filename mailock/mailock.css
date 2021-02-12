@@ -5,11 +5,32 @@ body {
     color: black;
     font-family: 'Archivo', sans-serif;
     text-align: center;
-    height: 100vh;
 }
 
 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 40vh;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    font-size: 3.5vw;
+}
+
+#back {
+    position:absolute;
+    top:0;
+    left:0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:white;
+    
+}
+#back:hover {
+    cursor:pointer;
+    background-color: #ddd;
+    color: black;
 }
 #background {
     background-image: linear-gradient(
@@ -19,9 +40,12 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+}
+  
+input {
+    margin-top: 25px;
 }
 
-input {
-    margin-bottom: 50px;
+label {
+    font-size: 30px;
 }
