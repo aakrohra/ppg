@@ -36,7 +36,7 @@ h1 {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.3)
-      ),url('../cherryblossom.png');
+      ),url('../resources/cherryblossom.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -57,7 +57,7 @@ label {
     margin: 0 auto 0 auto;
     transform-origin: bottom;
     width: 20vh;
-    background-image: url('../maichibi.jpg');
+    background-image: url('../resources/maichibi.png');
     position: fixed;
     top: 83vh;
     left: 80vw

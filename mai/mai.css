@@ -190,7 +190,7 @@ body {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.3)
-      ),url('../cherryblossom.png');
+      ),url('../resources/cherryblossom.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -240,7 +240,7 @@ body {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.3)
-      ),url('../bestmai.jpg');
+      ),url('../resources/bestmai.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -255,7 +255,7 @@ body {
 }
 
 #maipage {
-    cursor: url('../mai29small.cur'),auto;
+    cursor: url('../resources/mai29small.cur'),auto;
 }
 #maipage h1 {
     font-family: 'Cabin', sans-serif;

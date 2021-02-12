@@ -5,7 +5,7 @@ var counter = 0
 var imagenum = 100
 var maiheight = 20000
 
-var song = new Audio('../Song.mp3');
+var song = new Audio('../resources/Song.mp3');
 song.volume = 0.5
 document.body.addEventListener("click", () => {
     song.play()
