@@ -3,3 +3,8 @@
     width: 85%;
     padding-bottom: 20px;
 }
+
+.ppimg.resize {
+    width: 1000px;
+    height: 1000px;
+}

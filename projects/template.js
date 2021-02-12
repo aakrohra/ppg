@@ -14,6 +14,7 @@ $(document).ready(function () {
             pname.innerHTML = (data[i].Name);
             desc.innerHTML = (data[i].Description);
             $("#ppvid").attr('src', data[i].Video);
+            $("#ppimg").attr('src', data[i].Image);
             }
         }
 
