@@ -151,7 +151,7 @@ li a:hover {
 .name {
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 41.5%;
+    top: 39.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
@@ -203,8 +203,9 @@ li a:hover {
 img{
     max-height:300px;
     max-width:300px;
-    height:auto;
-    width:auto;
+    height:163px;
+    width:245px;
+    object-fit: cover;
 }
 
 .video{
