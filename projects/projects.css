@@ -1,10 +1,23 @@
 .ppText {
     margin: 0 auto;
     width: 85%;
-    padding-bottom: 20px;
+    margin-top: -5px;
 }
 
-.ppimg.resize {
-    width: 1000px;
-    height: 1000px;
+#ppvid {
+    border: 5px solid rgb(35, 25, 114);
+    border-radius: 20px;
+    margin-top: -4px;
+    margin-bottom: 20px;
+}
+
+#ppimg {
+    border: 3px solid rgb(35, 25, 114);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#pptitle {
+    margin-top: 5px;
+    margin-bottom: -10px;
 }
