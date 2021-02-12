@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+body {
+    background-image: linear-gradient(to right, lightgray , white);
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 40vh;
+}
+#background {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),url('../cherryblossom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+input {
+    margin-bottom: 50px;
+}
