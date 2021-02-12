@@ -15,6 +15,11 @@
     border: 3px solid rgb(35, 25, 114);
     border-radius: 20px;
     margin-top: 20px;
+    max-height:300px;
+    max-width:300px;
+    height:163px;
+    width:245px;
+    object-fit: cover;
 }
 
 #pptitle {
