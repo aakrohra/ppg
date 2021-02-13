@@ -7,8 +7,22 @@ var maiheight = 20000
 
 var song = new Audio('../resources/Song.mp3');
 song.volume = 0.5
+var songplayed = false
 document.body.addEventListener("click", () => {
-    song.play()
+    if (songplayed) {
+        song.pause()
+        
+        songplayed = false
+    }
+    else {
+        
+        song.play()
+
+        
+        songplayed = true
+    }
+    
+    
 }, true)
 // function showImages() {
 //     if (maibutton.value == "OFF") {
