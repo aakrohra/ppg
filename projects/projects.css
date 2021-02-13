@@ -15,11 +15,12 @@
     border: 3px solid rgb(35, 25, 114);
     border-radius: 20px;
     margin-top: 20px;
-    max-height:300px;
-    max-width:300px;
-    height:163px;
-    width:245px;
+    margin-bottom: 10px;
+    max-height:3000px;
+    max-width:3000px;
     object-fit: cover;
+    width: 60%;
+    height: calc(60vw * 0.5625);
 }
 
 #pptitle {
