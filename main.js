@@ -8,7 +8,14 @@
 var paragraph = document.getElementById("m");
 
 console.log("test");
-
+var icon = document.getElementById("icon")
+setInterval(() => {
+    var random = Math.floor(Math.random()*500) + 1
+    if (random == 500) {
+        icon.setAttribute("href","resources/mai29.jpg")
+        setTimeout(() => {icon.setAttribute("href","glenlogo.jpg")},100)
+    }
+},100)
 // button.addEventListener("click", () => {
 //     console.log(button.innerHTML)
 //     if (button.innerHTML == "stop") {
