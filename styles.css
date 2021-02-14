@@ -36,6 +36,29 @@ body {
     margin-top: 0px;
 }
 
+.topbar {
+    display: flex;
+}
+
+.search-container form{
+    display: flex;
+    padding: 25px;
+}
+
+.search-container button:hover {
+    background: #ccc;
+  }
+
+.search-container input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}  
+
+.galleryheader {
+    clear:both
+}
+
 .introtext {
     margin: 0 auto;
     width: 85%;
@@ -74,7 +97,6 @@ li {
 
 .menu {
     display: flex;
-/*    position: fixed;*/
     justify-content: center;
     background-color: transparent;
     width: 100%;
