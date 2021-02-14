@@ -11,8 +11,29 @@ body {
     padding: 0px;
 }
 
+.TitleLine {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .maintitle {
     font-family: 'Fugaz One', cursive;
+    margin-bottom: 3px;
+}
+
+.logoimg {
+    padding: 15px;
+    padding-bottom: 0px;
+    height:100px;
+    width:auto;
+    object-fit: cover;
+}
+
+.secondtitle {
+    font-family: 'Fugaz One', cursive;
+    margin-top: 0px;
 }
 
 .introtext {

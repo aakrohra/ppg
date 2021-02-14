@@ -1,4 +1,3 @@
-
 var gallery = document.getElementById("gallery")
 var info = {}
 $(document).ready(function () { 
