@@ -61,6 +61,7 @@ body {
 .search-container input[type=text] {
     padding: 6px;
     font-size: 17px;
+    width: 250px;
     border: none;
     border: 3px solid rgb(35, 25, 114);
 }  
