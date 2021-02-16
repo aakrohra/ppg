@@ -11,6 +11,14 @@ body {
     padding: 0px;
 }
 
+.gallerymainpage {
+    min-height: calc(100vh - 167px);
+}
+.bottom-menu {
+    height: 167px
+}
+
+
 .TitleLine {
     padding: 0px;
     display: flex;
