@@ -1,6 +1,6 @@
 # PP Gallery Team!
 
-### Web Programmers:
+### Web Developers:
 - Aakaash Rohra
 - Matthew Tang
 - Rafay Usman
