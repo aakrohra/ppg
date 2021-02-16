@@ -3,9 +3,8 @@ function galleryfillter() {
     var input = document.getElementById('filtersearch');
     var filter = input.value.toUpperCase();
 
-    gallery.innerHTML = ''
-
     $.getJSON('../projects/data.json', function (data) {
+        gallery.innerHTML = ''
         info = data
         for (var i=0; i < info.length; i++) {
             txtValue = info[i].Name;

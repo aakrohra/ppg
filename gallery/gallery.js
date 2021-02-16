@@ -2,8 +2,6 @@ function gallerystart() {
     var gallery = document.getElementById("gallery");
     var info = {};
 
-    gallery.innerHTML = ''
-
     $.getJSON('../projects/data.json', function (data) {
         info = data
         for (var i=0; i < info.length; i++) {
