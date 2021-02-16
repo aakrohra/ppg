@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" id="icon" href="../glenlogo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-    <script src="search.js" type="text/javascript"></script>
     
 </head>
 <body class = "gallerypage">
@@ -44,13 +43,13 @@
         </div>
         <div class="search-container">
             <form action="">
-            <input type="text" id="filtersearch" onkeyup="galleryfillter()" placeholder="Search for names..">
+            <input type="text" id="filtersearch" onkeyup="filter()" placeholder="Search for names..">
             </form>
         </div>  
         <div id="place"></div>
         <div id="gallery">
         </div>
-        <div class="bottom-menu">
+        <div id="bottom-menu" class="bottom-menu" style="opacity:0">
             <p class="email">Something wrong? Contact the developers! <br>ppgalleryteam@g<span class="mailink" onclick="window.location.href='../mailock/mailock.html'" >mai</span>l.com</p>
             <div class="bottom-links">
                 <a href="https://schools.peelschools.org/sec/glenforest/Pages/default.aspx">Glenforest S.S.</a>

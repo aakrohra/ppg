@@ -359,3 +359,8 @@ img{
     background-color: rgb(0, 0, 0, 0.2);
     z-index:-98;
 }
+
+#bottom-menu.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
