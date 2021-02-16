@@ -1,5 +1,5 @@
 function galleryfillter() {
-    var gallery = document.getElementById("gallery")
+    var gallery = document.getElementById("gallery");
     var input = document.getElementById('filtersearch');
     var filter = input.value.toUpperCase();
 

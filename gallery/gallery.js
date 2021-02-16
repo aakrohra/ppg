@@ -1,6 +1,9 @@
-var gallery = document.getElementById("gallery")
-var info = {}
-$(document).ready(function () { 
+function gallerystart() { 
+    var gallery = document.getElementById("gallery");
+    var info = {};
+
+    gallery.innerHTML = ''
+
     $.getJSON('../projects/data.json', function (data) {
         info = data
         for (var i=0; i < info.length; i++) {
@@ -25,7 +28,10 @@ $(document).ready(function () {
             gallery.append(column)
         }
     })
-})
+}
+
+gallerystart();
+
 var icon = document.getElementById("icon")
 setInterval(() => {
     var random = Math.floor(Math.random()*500) + 1
