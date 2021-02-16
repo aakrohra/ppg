@@ -1,0 +1,4 @@
+AuthUserFile mai/.htpasswd
+AuthName "Mai Sakurajima Shrine"
+AuthType Basic
+require valid-user
