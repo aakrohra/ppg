@@ -1,5 +1,5 @@
 function checker() {
-    var x = document.forms["mailock"]["passwd"].value;
+    var x = document.forms["lock"]["passwd"].value;
     if (x != "maisakurajimabestgirl") {
         alert("Incorrect password.");
         return false
