@@ -14,10 +14,6 @@ body {
 .gallerymainpage {
     min-height: calc(100vh - 167px);
 }
-.bottom-menu {
-    height: 167px
-}
-
 
 .TitleLine {
     padding: 0px;
@@ -167,6 +163,7 @@ li a:hover {
     font-size: 12px;
     width: 100%;
     overflow: hidden;
+    height: 167px
 }
 
 .creators .creator-names {
@@ -369,7 +366,3 @@ img{
     z-index:-98;
 }
 
-#bottom-menu.active {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
