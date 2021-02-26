@@ -27,6 +27,7 @@ $(document).ready(function () {
                 iframe.setAttribute("class","video")
                 iframe.setAttribute("id","ppvid")
                 iframe.setAttribute("frameborder","0")
+                iframe.setAttribute("allowfullscreen","true")
                 iframe.setAttribute("src", data[i].Video)
                 template.append(iframe)
             }
