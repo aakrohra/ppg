@@ -15,14 +15,14 @@ $(document).ready(function () {
             title.innerHTML = (data[i].Title);
             pname.innerHTML = (data[i].Name);
             desc.innerHTML = (data[i].Description);
-            if (data[i].hasOwnProperty('Image')){
+            if (data[i].hasOwnProperty('Image') && data[i].Image != "N/A"){
                 var image = document.createElement("img")
                 image.setAttribute("class","image")
                 image.setAttribute("id","ppimg")
                 image.setAttribute("src",data[i].Image)
                 template.append(image)
             }
-            if (data[i].hasOwnProperty('Video')){
+            if (data[i].hasOwnProperty('Video') && data[i].Video != "N/A"){
                 var iframe = document.createElement("iframe")
                 iframe.setAttribute("class","video")
                 iframe.setAttribute("id","ppvid")
