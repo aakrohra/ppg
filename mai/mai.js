@@ -24,10 +24,11 @@ document.body.addEventListener("click", () => {
     
     
 }, true)
-// function showImages() {
-//     if (maibutton.value == "OFF") {
-//         maibutton.value = "ON";
-//         maibutton.innerHTML = "Hide Mai Sakurajima";
+
+
+var modalImg = document.getElementById("img01");
+var modal = document.getElementById("myModal")
+
 var maigallery = document.getElementById("maigallery")
 console.log("test")
 var images = []
@@ -35,6 +36,9 @@ imageX = []
 imageY = []
 counter = 0
 var array = Array.from(Array(2407).keys())
+
+
+var modalId = 0
 console.log(array)
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -48,7 +52,7 @@ function shuffleArray(array) {
 array = shuffleArray(array)
 console.log(array)
 function addImages() {
-
+    
     var maigallery = document.getElementById("maigallery")
     
     for (i = counter * imagenum; i < (counter + 1) * imagenum; i++) {
@@ -64,14 +68,20 @@ function addImages() {
         div.setAttribute("class", "maiwrap")
 
         var a = document.createElement("a");
-        a.setAttribute("href",`../resources/mai${array[i]}.jpg`)
         div.append(a)
         images[i] = document.createElement("img");
         a.append(images[i])
         images[i].setAttribute("src", `../resources/mai${array[i]}.jpg`);
         images[i].setAttribute("id", "mai" + array[i])
         images[i].classList.add("maiimg","grow")
-        
+        images[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            console.log(this.id.slice(3))
+            console.log(array)
+            modalId = array.indexOf(parseInt(this.id.slice(3)))
+            console.log(modalId)
+        }
 
 
         var text = document.createElement("p");
@@ -97,6 +107,23 @@ function addImages() {
             //when release hover, change filter back to 100 percent.
             $(this).parent().css('filter', 'brightness(100%)');
         });
+    $('#mai-gallery').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    console.log("yo")
 }
 
 var height = $(document).height();
@@ -113,7 +140,8 @@ function setup() {
     var maigallery = document.getElementById("maigallery")
 
     maigallery.style.height = 340 * (counter * imagenum) / Math.floor(width / 320) + "px"
-
+    
+    
 }
 
 $(window).scroll(function () {
@@ -122,3 +150,31 @@ $(window).scroll(function () {
         addImages()
     }
 });
+
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var left = document.getElementById("left-move")
+left.onclick = function() {
+    if (modalId == 0) {
+        return;
+    }
+    modalImg.src = `../resources/mai${array[modalId-1]}.jpg`
+    
+    modalId--
+    console.log(modalId)
+}
+
+var right = document.getElementById("right-move")
+right.onclick = function() {
+    if (modalId == array.length) {
+        return;
+    }
+    
+    modalImg.src = `../resources/mai${array[modalId+1]}.jpg`
+    modalId++
+    console.log(modalId)
+}
