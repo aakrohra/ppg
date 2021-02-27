@@ -65,6 +65,13 @@ $(document).ready(function () {
 
 });
 
+var bottom = document.getElementById("bottom-menu")
+$(document).ready(function () { 
+    
+    bottom.classList.toggle("active")
+    bottom.style.opacity = 1;
+})
+
 setInterval(() => {
     var random = Math.floor(Math.random()*500) + 1
     if (random == 500) {
