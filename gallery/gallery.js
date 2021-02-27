@@ -81,7 +81,7 @@ function filter() {
 
     $.getJSON('../projects/data.json', function (data) {
         for (i=0;i<info.length;i++) {
-            if (info[i].Name.toLowerCase().includes(filter) || info[i].Title.toLowerCase().includes(filter)) {
+            if (info[i].name.toLowerCase().includes(filter) || info[i].title.toLowerCase().includes(filter)) {
                 $("#column" + i).fadeIn(500)
             }
             else {
