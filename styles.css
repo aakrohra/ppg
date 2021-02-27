@@ -163,9 +163,13 @@ li a:hover {
     font-size: 12px;
     width: 100%;
     overflow: hidden;
-    height: 167px
+    height: 167px;
+    opacity: 0;
 }
-
+.bottom-menu.active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
 .creators .creator-names {
     display: inline-block;
     padding-left: 10px;

@@ -16,6 +16,13 @@ setInterval(() => {
         setTimeout(() => {icon.setAttribute("href","glenlogo.png")},100)
     }
 },100)
+
+var bottom = document.getElementById("bottom-menu")
+$(document).ready(function () { 
+    
+    bottom.classList.toggle("active")
+    bottom.style.opacity = 1;
+})
 // button.addEventListener("click", () => {
 //     console.log(button.innerHTML)
 //     if (button.innerHTML == "stop") {
