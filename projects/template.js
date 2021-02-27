@@ -10,40 +10,30 @@ var template = document.getElementById("template")
 
 $(document).ready(function () {
     $.getJSON('data.json', function (data) {
+        console.log(data)
         for (var i = 0; i < data.length; i++){
             if (data[i].code == querySegment){
-            title.innerHTML = (data[i].Title);
-            pname.innerHTML = (data[i].Name);
-            desc.innerHTML = (data[i].Description);
-            if (data[i].hasOwnProperty('Image') && data[i].Image != "N/A"){
-                var image = document.createElement("img")
-                image.setAttribute("class","image")
-                image.setAttribute("id","ppimg")
-                image.setAttribute("src",data[i].Image)
-                template.append(image)
+            title.innerHTML = (data[i].title);
+            pname.innerHTML = (data[i].name);
+            desc.innerHTML = (data[i].description);
+            images = data[i].image.split("\n")
+            for (j=0;j<images.length;j++) {
+                if (images[j] != "N/A" && images[j].length != 0) {
+                    var image = document.createElement("img")
+                    image.setAttribute("class","image")
+                    image.setAttribute("id","ppimg")
+                    image.setAttribute("src",images[j])
+                    template.append(image)
+                }
             }
-            if (data[i].hasOwnProperty('Image2') && data[i].Image2 != "N/A"){
-                var image2 = document.createElement("img")
-                image2.setAttribute("class","image")
-                image2.setAttribute("id","ppimg2")
-                image2.setAttribute("src",data[i].Image2)
-                template.append(image2)
-            }
-            if (data[i].hasOwnProperty('Image3') && data[i].Image3 != "N/A"){
-                var image3 = document.createElement("img")
-                image3.setAttribute("class","image")
-                image3.setAttribute("id","ppimg3")
-                image3.setAttribute("src",data[i].Image3)
-                template.append(image3)
-            }
-            if (data[i].hasOwnProperty('Video') && data[i].Video != "N/A"){
+            if (data[i].video.length != 0 && data[i].video != "N/A"){
                 var para = document.createElement("p")
                 var iframe = document.createElement("iframe")
                 iframe.setAttribute("class","video")
                 iframe.setAttribute("id","ppvid")
                 iframe.setAttribute("frameborder","0")
                 iframe.setAttribute("allowfullscreen","true")
-                iframe.setAttribute("src", data[i].Video)
+                iframe.setAttribute("src", data[i].video)
                 para.append(iframe)
                 template.append(para)
             }

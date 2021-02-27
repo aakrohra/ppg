@@ -4,6 +4,7 @@ var bottom = document.getElementById("bottom-menu")
 $(document).ready(function () { 
     $.getJSON('../projects/data.json', function (data) {
         info = data
+        console.log(info)
         for (var i=0; i < info.length; i++) {
             
             var column = document.createElement("div")
@@ -14,16 +15,16 @@ $(document).ready(function () {
             column.append(a)
             var img = document.createElement("img")
             img.setAttribute("draggable","false")
-            img.setAttribute("src",info[i].Image)
+            img.setAttribute("src",info[i].image.split("\n")[0])
             a.append(img)
             var name = document.createElement("div")
             name.setAttribute("class","name")
             column.append(name)
             var p = document.createElement("p")
-            p.innerHTML = info[i].Title
+            p.innerHTML = info[i].title
             name.append(p)
             var text = document.createElement("H3")
-            text.innerHTML = info[i].Name
+            text.innerHTML = info[i].name
             column.append(text)
             gallery.append(column)
         }
