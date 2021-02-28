@@ -36,3 +36,20 @@
 .imagediv {
     display: inline;
 }
+
+.templatelinks {
+    margin-bottom: -1px;
+}
+
+.templatelinks:link {
+    color: rgb(0,81,181);
+}
+
+.templatelinks:visited {
+    color: rgb(0,81,181);
+}
+
+.templatelinks:hover {
+    color: gray;
+}
+

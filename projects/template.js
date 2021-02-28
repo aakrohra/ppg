@@ -16,6 +16,31 @@ $(document).ready(function () {
                 title.innerHTML = (data[i].title);
                 pname.innerHTML = (data[i].name);
                 desc.innerHTML = (data[i].description);
+                
+                if (data[i].special1.length != 0 && data[i].special1 != "N/A"){
+                    var special1 = document.createElement("a")
+                    special1.setAttribute("href",data[i].special1)
+                    special1.setAttribute("target","_blank")
+                    special1.setAttribute("class","templatelinks")
+                    var special1text = document.createElement("p")
+                    special1text.innerHTML = data[i].special1info
+                    special1text.setAttribute("class","templatelinks")
+                    special1.append(special1text)
+                    template.append(special1)
+                }
+                
+                if (data[i].special2.length != 0 && data[i].special2 != "N/A"){
+                    var special2 = document.createElement("a")
+                    special2.setAttribute("href",data[i].special2)
+                    special2.setAttribute("target","_blank")
+                    special2.setAttribute("class","templatelinks")
+                    var special2text = document.createElement("p")
+                    special2text.innerHTML = data[i].special2info
+                    special2text.setAttribute("class","templatelinks")
+                    special2.append(special2text)
+                    template.append(special2)
+                }
+                
                 images = data[i].image.split("\n")
                 var c = images.length > 3
                 if (c) {
@@ -58,6 +83,7 @@ $(document).ready(function () {
                     para.append(iframe)
                     template.append(para)
                 }
+                
                 break;
             }
         }
