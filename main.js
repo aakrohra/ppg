@@ -7,16 +7,6 @@
 // var on = false;
 var paragraph = document.getElementById("m");
 
-//console.log("test");
-//var icon = document.getElementById("icon")
-//setInterval(() => {
-//    var random = Math.floor(Math.random()*500) + 1
-//    if (random == 500) {
-//        icon.setAttribute("href","resources/mai29.jpg")
-//        setTimeout(() => {icon.setAttribute("href","glenlogo.png")},100)
-//    }
-//},100)
-
 var bottom = document.getElementById("bottom-menu")
 $(document).ready(function () { 
     
@@ -24,8 +14,8 @@ $(document).ready(function () {
     bottom.style.opacity = 1;
 })
 
-$(".email")[0].innerHTML = "Something wrong? Contact the developers! <br>ppgalleryteam@g<span onclick=\"window.location.href='../lock/lock.html'\" >mai</span>l.com"
-setInterval(() => { if (Math.floor(Math.random()*500) + 1 == 500) {icon.setAttribute("href","../resources/glenlogo.png");setTimeout(() => {icon.setAttribute("href","../glenlogo.png")},50)}},100)
+//$(".email")[0].innerHTML = "Something wrong? Contact the developers! <br>ppgalleryteam@g<span onclick=\"window.location.href='../lock/lock.html'\" >mai</span>l.com"
+//setInterval(() => { if (Math.floor(Math.random()*500) + 1 == 500) {icon.setAttribute("href","../resources/glenlogo.png");setTimeout(() => {icon.setAttribute("href","../glenlogo.png")},50)}},100)
 // button.addEventListener("click", () => {
 //     console.log(button.innerHTML)
 //     if (button.innerHTML == "stop") {
