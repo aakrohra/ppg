@@ -34,14 +34,14 @@ $(document).ready(function () {
     bottom.classList.toggle("active")
     bottom.style.opacity = 1;
 })
-var icon = document.getElementById("icon")
-setInterval(() => {
-    var random = Math.floor(Math.random()*500) + 1
-    if (random == 500) {
-        icon.setAttribute("href","../resources/mai29.jpg")
-        setTimeout(() => {icon.setAttribute("href","../glenlogo.png")},100)
-    }
-},100)
+//var icon = document.getElementById("icon")
+//setInterval(() => {
+//    var random = Math.floor(Math.random()*500) + 1
+//    if (random == 500) {
+//        icon.setAttribute("href","../resources/mai29.jpg")
+//        setTimeout(() => {icon.setAttribute("href","../glenlogo.png")},100)
+//    }
+//},100)
 
 // function filter() {
 //     var filter = document.getElementById("filtersearch").value.toLowerCase()

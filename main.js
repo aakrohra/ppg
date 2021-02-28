@@ -7,15 +7,15 @@
 // var on = false;
 var paragraph = document.getElementById("m");
 
-console.log("test");
-var icon = document.getElementById("icon")
-setInterval(() => {
-    var random = Math.floor(Math.random()*500) + 1
-    if (random == 500) {
-        icon.setAttribute("href","resources/mai29.jpg")
-        setTimeout(() => {icon.setAttribute("href","glenlogo.png")},100)
-    }
-},100)
+//console.log("test");
+//var icon = document.getElementById("icon")
+//setInterval(() => {
+//    var random = Math.floor(Math.random()*500) + 1
+//    if (random == 500) {
+//        icon.setAttribute("href","resources/mai29.jpg")
+//        setTimeout(() => {icon.setAttribute("href","glenlogo.png")},100)
+//    }
+//},100)
 
 var bottom = document.getElementById("bottom-menu")
 $(document).ready(function () { 
