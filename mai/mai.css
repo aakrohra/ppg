@@ -294,6 +294,14 @@ body {
     100% { transform: scale(1,1)      translateY(0); }
 }
 
+.maidisc {
+    position: fixed;
+    top: 10vh;
+    left: 88vw;
+    height: 20vh;
+    width: auto;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

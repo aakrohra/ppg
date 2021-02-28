@@ -16,7 +16,7 @@ $(document).ready(function () {
             var img = document.createElement("img")
             img.setAttribute("draggable","false")
             console.log(info[i].image)
-            img.setAttribute("src", info[i].image.length != 0 && info[i].image != "N/A" ? info[i].image.split("\n")[0] : "../glenlogo.png")
+            img.setAttribute("src", info[i].image.length != 0 && info[i].image.startsWith("https://") ? info[i].image.split("\n")[0] : "../glenlogo.png")
             a.append(img)
             var name = document.createElement("div")
             name.setAttribute("class","name")

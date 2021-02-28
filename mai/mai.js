@@ -8,7 +8,7 @@ var maiheight = 20000
 var song = new Audio('../resources/Song.mp3');
 song.volume = 0.5
 var songplayed = false
-document.body.addEventListener("click", () => {
+function play() {
     if (songplayed) {
         song.pause()
         
@@ -23,7 +23,7 @@ document.body.addEventListener("click", () => {
     }
     
     
-}, true)
+}
 
 
 var modalImg = document.getElementById("img01");

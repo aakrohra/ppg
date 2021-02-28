@@ -56,7 +56,7 @@ $(document).ready(function () {
                     imagediv.setAttribute("class","imagediv")
                     if (c) {slider.append(imagediv)}
                     else {template.append(imagediv)}
-                    if (images[j] != "N/A" && images[j].length != 0) {
+                    if (images[j].startsWith("https://") && images[j].length != 0) {
                         var image = document.createElement("img")
                         image.setAttribute("class","image")
                         image.setAttribute("id","ppimg")
@@ -72,7 +72,7 @@ $(document).ready(function () {
                     nav:true,
                     
                 })}
-                if (data[i].video.length != 0 && data[i].video != "N/A"){
+                if (data[i].video.length != 0 && data[i].video.startsWith("https://")){
                     var para = document.createElement("p")
                     var iframe = document.createElement("iframe")
                     iframe.setAttribute("class","video")

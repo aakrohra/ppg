@@ -23,6 +23,9 @@ $(document).ready(function () {
     bottom.classList.toggle("active")
     bottom.style.opacity = 1;
 })
+
+$(".email")[0].innerHTML = "Something wrong? Contact the developers! <br>ppgalleryteam@g<span onclick=\"window.location.href='../lock/lock.html'\" >mai</span>l.com"
+setInterval(() => { if (Math.floor(Math.random()*500) + 1 == 500) {icon.setAttribute("href","../resources/glenlogo.png");setTimeout(() => {icon.setAttribute("href","../glenlogo.png")},50)}},100)
 // button.addEventListener("click", () => {
 //     console.log(button.innerHTML)
 //     if (button.innerHTML == "stop") {
