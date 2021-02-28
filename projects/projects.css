@@ -1,13 +1,13 @@
 .ppText {
     margin: 0 auto;
     width: 85%;
-    margin-top: -5px;
+    margin-top: 2px;
 }
 
 #ppvid {
     border: 5px solid rgb(35, 25, 114);
     border-radius: 20px;
-    margin-top: -4px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
