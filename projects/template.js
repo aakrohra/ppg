@@ -22,6 +22,7 @@ $(document).ready(function () {
                     var slider = document.createElement("div")
                     template.append(slider)
                     slider.setAttribute("class","owl-carousel owl-theme")
+                    slider.style.setProperty("margin-bottom","15px")
                 }
                 
                 
