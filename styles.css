@@ -70,6 +70,51 @@ body {
     margin: 0 auto;
     width: 85%;
     padding-bottom: 20px;
+    text-align:left;
+}
+
+.introtext1 {
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 10px;
+    text-align:left;
+} 
+
+.introtext2 {
+    margin: 0 auto;
+    width: 82%;
+    padding-bottom: 10px;
+    text-align:left;
+} 
+
+.moreinfolink {
+    margin: 0 auto;
+    width: 85%;
+    padding-top:20px;
+    padding-bottom: 30px;
+    text-align:left;
+}
+
+.gallery_description{
+    margin:0 auto;
+    width:85%;
+    padding-top:10px;
+    padding-bottom: 15px;
+}
+
+.thankyou {
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.subtitle {
+    margin:0 auto;
+    width: 85%;
+    padding-bottom: 0px;
+    text-align: left;
+    font-size: 17px;
 }
 
 button {
