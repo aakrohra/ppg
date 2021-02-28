@@ -29,6 +29,8 @@ $(document).ready(function () {
             column.append(text)
             gallery.append(column)
         }
+
+
     })
     
     bottom.classList.toggle("active")

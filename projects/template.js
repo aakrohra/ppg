@@ -77,6 +77,7 @@ $(document).ready(function () {
                     nav:true,
                     
                 })}
+
                 if (data[i].video.length != 0 && data[i].video.startsWith("https://")){
                     var para = document.createElement("p")
                     var iframe = document.createElement("iframe")
