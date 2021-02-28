@@ -57,13 +57,18 @@ $(document).ready(function () {
                     if (c) {slider.append(imagediv)}
                     else {template.append(imagediv)}
                     if (images[j].startsWith("https://") && images[j].length != 0) {
+                        var imagefull = document.createElement("a")
+                        imagefull.setAttribute("href", images[j])
+                        imagefull.setAttribute("target", "_blank")
                         var image = document.createElement("img")
                         image.setAttribute("class","image")
                         image.setAttribute("id","ppimg")
                         image.setAttribute("src",images[j])
-                        imagediv.append(image)
+                        imagefull.append(image)
+                        imagediv.append(imagefull)
                     }
                 }
+                
                 if (c) {
                 $('.owl-carousel').owlCarousel({
                     loop:true,
