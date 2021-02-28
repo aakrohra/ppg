@@ -234,7 +234,7 @@ li a:hover {
     border-left-color: white;
     border-right-color: rgb(0,69,160);
     border-bottom-color: rgb(0,69,160);
-    filter:brightness(70%);
+    filter:brightness(43%);
     transform: scale(1.05);
 }
 
