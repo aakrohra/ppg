@@ -90,6 +90,18 @@ $(document).ready(function () {
                     template.append(para)
                 }
                 
+                if (data[i].video2.length != 0 && data[i].video2.startsWith("https://")){
+                    var para2 = document.createElement("p")
+                    var iframe2 = document.createElement("iframe")
+                    iframe2.setAttribute("class","video")
+                    iframe2.setAttribute("id","ppvid")
+                    iframe2.setAttribute("frameborder","0")
+                    iframe2.setAttribute("allowfullscreen","true")
+                    iframe2.setAttribute("src", data[i].video2)
+                    para2.append(iframe2)
+                    template.append(para2)
+                }
+                
                 break;
             }
         }
