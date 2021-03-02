@@ -6,7 +6,7 @@ $(document).ready(function () {
         info = data
         console.log(info)
         for (var i=0; i < info.length; i++) {
-            
+            if (info[i].name.toLowerCase().includes("matthew")) {continue}
             var column = document.createElement("div")
             column.setAttribute("class","column")
             column.setAttribute("id","column" + i)
