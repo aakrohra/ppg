@@ -1,11 +1,18 @@
-function checker() {
-    var x = document.forms["lock"]["passwd"].value;
-    if (x != "maisakurajimabestgirl") {
-        alert("Incorrect password.");
-        return false
-    }
-}
 
+$(document).ready(function () {
+    $("#form").on('submit', function (e) {
+        e.preventDefault();
+        if ($("#passwd").val() == "maisakurajimabestgirl") {
+            window.location.href = "../mai/mai.html"
+        }
+        if ($("#passwd").val() == "sakuratime") {
+            window.location.href = "../cherryblossom/cherryblossom.html"
+        }
+        else {
+            alert("incorrect password!")
+        }
+    });
+});
 var after = document.getElementById("after")
 var after2 = document.getElementById("after2")
 var current = 1
