@@ -21,7 +21,7 @@ function play() {
         
         songplayed = true
     }
-    
+    document.getElementById("maidisc").classList.toggle("paused")
     
 }
 

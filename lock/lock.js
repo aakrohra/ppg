@@ -8,9 +8,6 @@ $(document).ready(function () {
         if ($("#passwd").val() == "sakuratime") {
             window.location.href = "../cherryblossom/cherryblossom.html"
         }
-        else {
-            alert("incorrect password!")
-        }
     });
 });
 var after = document.getElementById("after")
