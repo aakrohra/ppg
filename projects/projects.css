@@ -63,3 +63,11 @@ html, body {
 .templatelinks:hover {
     color: gray;
 }
+
+.imusic {
+    width: 50%;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px; 
+}

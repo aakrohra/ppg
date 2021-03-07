@@ -102,6 +102,16 @@ $(document).ready(function () {
                     template.append(para2)
                 }
                 
+                if (data[i].music.length != 0 && data[i].music.startsWith("https://")) {
+                    var imusic = document.createElement("iframe")
+                    imusic.setAttribute("class","imusic")
+                    imusic.setAttribute("scrolling","no")
+                    imusic.setAttribute("frameborder","no")
+                    imusic.setAttribute("allow","autoplay")
+                    imusic.setAttribute("src","https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1218395104&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+                    template.append(imusic)
+                }
+                
                 break;
             }
         }
