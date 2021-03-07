@@ -102,6 +102,7 @@ $(document).ready(function () {
                     template.append(para2)
                 }
                 
+                // github pages build pls work
                 if (data[i].music.length != 0 && data[i].music.startsWith("https://")) {
                     var imusic = document.createElement("iframe")
                     imusic.setAttribute("class","imusic")
