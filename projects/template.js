@@ -78,31 +78,46 @@ $(document).ready(function () {
                     
                 })}
 
-                if (data[i].video.length != 0 && data[i].video.startsWith("https://")){
-                    var para = document.createElement("p")
-                    var iframe = document.createElement("iframe")
-                    iframe.setAttribute("class","video")
-                    iframe.setAttribute("id","ppvid")
-                    iframe.setAttribute("frameborder","0")
-                    iframe.setAttribute("allowfullscreen","true")
-                    iframe.setAttribute("src", data[i].video)
-                    para.append(iframe)
-                    template.append(para)
+                
+                videos = data[i].video.split("\n")
+                for (b=0;b<videos.length;b++) {
+                    if (videos[b].startsWith("https://") && videos[b].length != 0) {
+                        var para = document.createElement("p")
+                        var iframe = document.createElement("iframe")
+                        iframe.setAttribute("class","video")
+                        iframe.setAttribute("id","ppvid")
+                        iframe.setAttribute("frameborder","0")
+                        iframe.setAttribute("allowfullscreen","true")
+                        iframe.setAttribute("src", videos[b])
+                        para.append(iframe)
+                        template.append(para)
+                    }
                 }
                 
-                if (data[i].video2.length != 0 && data[i].video2.startsWith("https://")){
-                    var para2 = document.createElement("p")
-                    var iframe2 = document.createElement("iframe")
-                    iframe2.setAttribute("class","video")
-                    iframe2.setAttribute("id","ppvid")
-                    iframe2.setAttribute("frameborder","0")
-                    iframe2.setAttribute("allowfullscreen","true")
-                    iframe2.setAttribute("src", data[i].video2)
-                    para2.append(iframe2)
-                    template.append(para2)
-                }
+//                if (data[i].video.length != 0 && data[i].video.startsWith("https://")){
+//                    var para = document.createElement("p")
+//                    var iframe = document.createElement("iframe")
+//                    iframe.setAttribute("class","video")
+//                    iframe.setAttribute("id","ppvid")
+//                    iframe.setAttribute("frameborder","0")
+//                    iframe.setAttribute("allowfullscreen","true")
+//                    iframe.setAttribute("src", data[i].video)
+//                    para.append(iframe)
+//                    template.append(para)
+//                }
+//                
+//                if (data[i].video2.length != 0 && data[i].video2.startsWith("https://")){
+//                    var para2 = document.createElement("p")
+//                    var iframe2 = document.createElement("iframe")
+//                    iframe2.setAttribute("class","video")
+//                    iframe2.setAttribute("id","ppvid")
+//                    iframe2.setAttribute("frameborder","0")
+//                    iframe2.setAttribute("allowfullscreen","true")
+//                    iframe2.setAttribute("src", data[i].video2)
+//                    para2.append(iframe2)
+//                    template.append(para2)
+//                }
                 
-                // github pages build pls work
                 if (data[i].music.length != 0 && data[i].music.startsWith("https://")) {
                     var imusic = document.createElement("iframe")
                     imusic.setAttribute("class","imusic")
