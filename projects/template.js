@@ -10,7 +10,6 @@ var template = document.getElementById("template")
 
 $(document).ready(function () {
     $.getJSON('data.json', function (data) {
-        console.log(data)
         for (var i = 0; i < data.length; i++){
             if (data[i].code == querySegment) {
                 title.innerHTML = (data[i].title);
