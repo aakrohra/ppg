@@ -5,11 +5,24 @@
 // var show = document.getElementById("show");
 // var change;
 // var on = false;
+var l;
 $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
-  console.log(JSON.stringify(data, null, 2));
+  l = (JSON.stringify(data, null, 2));
+});
+$.getJSON('/results.json', function(data){
+    data.push(l);
 });
 
-
+var data = JSON.parse(txt);  //parse the JSON
+data.employees.push({        //add the employee
+    firstName:"Mike",
+    lastName:"Rut",
+    time:"10:00 am",
+    email:"rut@bah.com",
+    phone:"800-888-8888",
+    image:"images/mike.jpg"
+});
+txt = JSON.stringify(data); 
 
 var paragraph = document.getElementById("m");
 
