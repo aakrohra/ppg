@@ -1,4 +1,4 @@
-# PP Gallery Team
+# Personal Project Gallery Team
 
 ### Web Developers:
 - Aakaash Rohra
