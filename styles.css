@@ -209,7 +209,6 @@ li a:hover {
     width: 100%;
     overflow: hidden;
     height: 167px;
-    opacity: 0;
 }
 .bottom-menu.active {
     opacity: 1;
