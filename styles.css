@@ -241,7 +241,7 @@ li a:hover {
 }
 
 .column {
-    display: inline-block;
+    display: none;
     padding: 10px;
     position: relative;
     text-align: center;
