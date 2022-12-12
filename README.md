@@ -12,5 +12,3 @@ Available at https://aakrohra.github.io/ppg/
 - Shayaha Jeyaseelan
 - Aman Yadhav
 - Bilal Shahid
-
-aakrohra.github.io/ppg
